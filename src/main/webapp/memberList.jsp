@@ -38,8 +38,9 @@
 				String userid = rs.getString("userid");
 				String userpw = rs.getString("userpw");
 				String useremail = rs.getString("useremail");
+				String usertime = rs.getString("usertime");
 				
-				out.println(count + ") " + userid + " / " + userpw + " / " + useremail + "<br>");
+				out.println(count + ") " + userid + " / " + userpw + " / " + useremail + " / "+ usertime + "<br>");
 				
 			}
 			
