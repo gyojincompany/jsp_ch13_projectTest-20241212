@@ -38,7 +38,7 @@
 				String userid = rs.getString("userid");
 				String userpw = rs.getString("userpw");
 				String useremail = rs.getString("useremail");
-				String usertime = rs.getString("usertime");
+				String usertime = rs.getString("usertime");//날짜데이터->문자열로 받기 가능
 				
 				out.println(count + ") " + userid + " / " + userpw + " / " + useremail + " / "+ usertime + "<br>");
 				
@@ -52,6 +52,9 @@
 			
 		} finally {
 			try {
+				if (rs != null ) {
+					rs.close();
+				}
 				if (pstmt != null) {
 					pstmt.close();
 				}
