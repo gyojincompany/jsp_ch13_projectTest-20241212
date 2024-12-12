@@ -15,7 +15,7 @@
 		
 		String userid = request.getParameter("userID");
 		
-		String sql = "DELETE FROM members WHERE memberid=?";
+		String sql = "DELETE FROM members WHERE userid=?";
 		
 		String driverName = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/jsp_project";
