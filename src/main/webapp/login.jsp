@@ -10,7 +10,7 @@
 <body>
 	<h2>관리자 로그인</h2>
 	<hr>
-	<form action="loginSuccess.jsp" name="loginForm" onsubmit="return loginCheck()">
+	<form action="loginSuccess.jsp" method="get" name="loginForm" onsubmit="return loginCheck()">
 		아이디 : <input type="text" name="adminID"><br><br>
 		비밀번호 : <input type="password" name="adminPW"><br><br>
 		<input type="submit" value="로그인"> 
